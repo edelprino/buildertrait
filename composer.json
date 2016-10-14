@@ -1,0 +1,19 @@
+{
+    "name": "edelprino/buildertraits",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ettore Delprino",
+            "email": "edelprino@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "": "src"
+      }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    }
+}
