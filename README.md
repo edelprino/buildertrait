@@ -28,7 +28,7 @@ $anObject = $builder->withFoo('bar')->buildAnObject();
 
 ## Install
 ```bash
-composer install edelprino/buildertrait
+composer require edelprino/buildertrait
 ```
 
 ## Resources on Builder pattern
