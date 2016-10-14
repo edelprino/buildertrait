@@ -10,10 +10,10 @@ class WithTest extends \PHPUnit_Framework_TestCase
         $builder = new ObjectWithTraitBuilder();
 
         $object = $builder
-          ->withTest(ANY_VALUE)
+          ->withTest(self::ANY_VALUE)
           ->build();
 
-        $this->assertEquals($object->test, ANY_VALUE);
+        $this->assertEquals($object->test, self::ANY_VALUE);
     }
 
     public function testCreateVirtualWithMethodWithCamelCaseProperty()
@@ -21,10 +21,10 @@ class WithTest extends \PHPUnit_Framework_TestCase
         $builder = new ObjectWithTraitBuilder();
 
         $object = $builder
-          ->withTestCamelCase(ANY_VALUE)
+          ->withTestCamelCase(self::ANY_VALUE)
           ->build();
 
-        $this->assertEquals($object->testCamelCase, ANY_VALUE);
+        $this->assertEquals($object->testCamelCase, self::ANY_VALUE);
     }
 
     /**

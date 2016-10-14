@@ -5,20 +5,20 @@ If you want to create a builder but you don't want to duplicate or write `with..
 
 ## Example
 ```php
-class SomeObjectBuilder
+class AnObjectBuilder
 {
     use With;
 
     private $foo;
 
-    public function buildSomeObject()
+    public function buildAnObject()
     {
-        return new SomeObject($this->foo);
+        return new AnObject($this->foo);
     }
 }
 
-$builder = new SomeObjectBuilder();
-$someObject = $builder->withFoo('bar')->buildSomeObject();
+$builder = new AnObjectBuilder();
+$anObject = $builder->withFoo('bar')->buildAnObject();
 ```
 
 ##TODO
