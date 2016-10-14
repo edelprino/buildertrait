@@ -4,7 +4,7 @@ If you want to create a builder but you don't want to duplicate or write `with..
 `BuilderTrait\With` create automatically `with...` method based on property of the builder object.
 
 ## Example
-```
+```php
 class SomeObjectBuilder
 {
     use With;
@@ -18,7 +18,7 @@ class SomeObjectBuilder
 }
 
 $builder = new SomeObjectBuilder();
-$someObject = $builder->withFoo('bar')->build();
+$someObject = $builder->withFoo('bar')->buildSomeObject();
 ```
 
 ##TODO
