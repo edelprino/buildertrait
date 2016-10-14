@@ -1,5 +1,7 @@
 <?php
-trait BuilderTrait
+namespace BuilderTrait;
+
+trait With
 {
     public function __call($method, $arguments)
     {
@@ -8,7 +10,7 @@ trait BuilderTrait
             $this->{$property} = $arguments[0];
             return $this;
         }
-        throw BuilderTraitException::propertyNotFound($property);
+        throw Exception::propertyNotFound($property);
     }
 
     private function extractPropertyName($method)
